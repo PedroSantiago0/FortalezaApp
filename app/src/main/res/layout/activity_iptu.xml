@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_light">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="←"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/bg_back_btn"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPTU &amp; Impostos"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consulte suas pendências municipais"
+                android:textSize="12sp"
+                android:textColor="#BDFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Status card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Você não possui pendências"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_dark"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seus impostos e taxas municipais estão em dia. Continue assim!"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray"
+                        android:textAlignment="center"
+                        android:lineSpacingMultiplier="1.4"
+                        android:layout_marginTop="6dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Details card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detalhes do contribuinte"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_mid"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_marginBottom="12dp" />
+
+                    <include layout="@layout/item_info_row"
+                        android:id="@+id/row_cpf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <include layout="@layout/item_info_row"
+                        android:id="@+id/row_cep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <include layout="@layout/item_info_row"
+                        android:id="@+id/row_iptu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <include layout="@layout/item_info_row"
+                        android:id="@+id/row_issqn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <include layout="@layout/item_info_row"
+                        android:id="@+id/row_coleta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Fiscal status card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_login_sheet">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SITUAÇÃO FISCAL"
+                        android:textSize="13sp"
+                        android:textColor="#BDFFFFFF"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REGULAR"
+                        android:textSize="28sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montserrat_bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nenhum débito em aberto com a Prefeitura de Fortaleza"
+                        android:textSize="13sp"
+                        android:textColor="#DDFFFFFF"
+                        android:lineSpacingMultiplier="1.3"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/btn_iptu_online"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="ACESSAR PORTAL SEFIN"
+                android:background="@drawable/bg_btn_orange"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btn_emitir_boleto"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="EMITIR BOLETO"
+                android:background="@drawable/bg_btn_teal"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

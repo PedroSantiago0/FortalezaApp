@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fortal Digital</string>
+    <string name="login_title">Fortaleza</string>
+    <string name="login_subtitle">PREFEITURA</string>
+    <string name="login_tagline">Tudo em um só lugar</string>
+    <string name="cpf_hint">CPF (ex: 000.000.000-00)</string>
+    <string name="cep_hint">CEP (ex: 60000-000)</string>
+    <string name="btn_enter">ENTRAR</string>
+    <string name="btn_no_register">Não tenho cadastro</string>
+    <string name="services">SERVIÇOS</string>
+    <string name="reclame_title">RECLAME AQUI</string>
+    <string name="reclame_desc">Registre problemas da cidade: buracos, lixo ou iluminação danificada.</string>
+    <string name="reclame_cat">GERAL</string>
+    <string name="iptu_title">IPTU &amp; IMPOSTOS</string>
+    <string name="iptu_desc">Consulte e acompanhe seus impostos e taxas municipais, como IPTU.</string>
+    <string name="iptu_cat">FINANCEIRO</string>
+    <string name="saude_title">SAÚDE +</string>
+    <string name="saude_desc">Postos de atendimento e agente de saúde responsável pela sua região.</string>
+    <string name="saude_cat">SAÚDE</string>
+    <string name="contatos_title">CONTATOS PÚBLICOS</string>
+    <string name="contatos_desc">Contatos de secretarias, ouvidoria e outros setores da prefeitura.</string>
+    <string name="contatos_cat">SERVIÇOS PÚBLICOS</string>
+    <string name="click_here">CLIQUE AQUI</string>
+    <string name="back">Voltar</string>
+    <string name="call">Ligar</string>
+    <string name="map">Ver no Mapa</string>
+    <string name="search_hint">Buscar secretaria ou serviço…</string>
+    <string name="new_record">Novo Registro</string>
+    <string name="my_records">Meus Registros</string>
+    <string name="problem_category">Categoria do problema</string>
+    <string name="problem_desc">Descrição do problema</string>
+    <string name="problem_desc_hint">Descreva o problema com detalhes…</string>
+    <string name="add_photo">Adicionar foto</string>
+    <string name="send">ENVIAR REGISTRO</string>
+    <string name="empty_records">Nenhum registro ainda.\nUse a aba Novo Registro para começar.</string>
+    <string name="welcome_btn">Explorar o App</string>
+    <string name="permission_camera">Permissão de câmera necessária</string>
+    <string name="err_fill_fields">Preencha CPF e CEP</string>
+    <string name="err_fill_desc">Descreva o problema</string>
+    <string name="success_sent">✅ Registro enviado com sucesso!</string>
+</resources>

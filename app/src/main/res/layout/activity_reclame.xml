@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_light">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:text="←"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/bg_back_btn"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reclame Aqui"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registre problemas da cidade"
+                android:textSize="12sp"
+                android:textColor="#BDFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tabs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_tab_new"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Novo Registro"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/teal"
+            android:background="@drawable/tab_selector"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btn_tab_my"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Meus Registros"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/gray"
+            android:background="@drawable/tab_selector"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- New Record Form -->
+    <ScrollView
+        android:id="@+id/layout_new_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Category -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria do problema"
+                android:textSize="13sp"
+                android:textColor="@color/text_mid"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_spinner"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/problem_categories" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição do problema"
+                android:textSize="13sp"
+                android:textColor="@color/text_mid"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Descreva o problema com detalhes…"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                android:gravity="top|start"
+                android:padding="14dp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Photo buttons -->
+            <LinearLayout
+                android:id="@+id/layout_photo_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btn_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Câmera"
+                    android:background="@drawable/bg_photo_btn"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp" />
+
+                <Button
+                    android:id="@+id/btn_gallery"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Galeria"
+                    android:background="@drawable/bg_photo_btn"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_photo_preview"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:id="@+id/iv_photo_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Foto selecionada" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="ENVIAR REGISTRO"
+                android:background="@drawable/bg_btn_orange"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_my_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_empty_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nenhum registro ainda.\nUse a aba Novo Registro para começar."
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="48dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_records"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="problem_categories">
+        <item>🕳️ Buraco na via</item>
+        <item>🗑️ Lixo irregular</item>
+        <item>💡 Iluminação danificada</item>
+        <item>🌊 Alagamento / Esgoto</item>
+        <item>🏗️ Obra irregular</item>
+        <item>🌳 Árvore de risco</item>
+        <item>📍 Outro</item>
+    </string-array>
+</resources>

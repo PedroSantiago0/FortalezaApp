@@ -1,0 +1,3 @@
+-keep class com.fortaleza.app.data.model.** { *; }
+-keep class com.fortaleza.app.data.db.** { *; }
+-dontwarn kotlin.**
