@@ -146,9 +146,3 @@ data class Record(
 
 ---
 
-## Observações
-
-- **Fontes**: na primeira execução com internet, o Android baixa automaticamente a fonte Montserrat via Google Fonts Provider. Sem internet, usa a fonte padrão do sistema.
-- **Ícones**: os 4 PNGs (`icon1.png` a `icon4.png`) já estão processados com fundo transparente em `res/drawable/`.
-- **Banner**: `banner_home.png` em `res/drawable/`.
-- Para **publicar na Play Store**, configure `keystore` em `app/build.gradle`.
