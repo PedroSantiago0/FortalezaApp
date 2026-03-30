@@ -52,7 +52,7 @@ FortalezaApp/
 
 ---
 
-## 🚀 Como abrir no Android Studio
+## Como abrir no Android Studio
 
 1. **Abra o Android Studio** (Hedgehog 2023.1.1 ou superior)
 2. `File → Open` → selecione a pasta `FortalezaApp/`
@@ -61,7 +61,7 @@ FortalezaApp/
 
 ---
 
-## 🔧 Requisitos
+## Requisitos
 
 | Item | Versão |
 |------|--------|
@@ -74,14 +74,14 @@ FortalezaApp/
 
 ---
 
-## ✅ Funcionalidades implementadas
+## Funcionalidades implementadas
 
-### 🏠 Home
+### Home
 - Banner completo com a imagem `BBANNER.png`
 - 4 cards com ícones PNG reais (transparência)
 - Pop-up de boas-vindas ao entrar
 
-### 📢 Reclame Aqui
+### Reclame Aqui
 - Categorias via Spinner
 - Descrição em campo de texto
 - Câmera nativa + galeria
@@ -89,25 +89,25 @@ FortalezaApp/
 - Lista de Meus Registros com status (Em análise / Resolvido)
 - Swipe to delete
 
-### 💎 IPTU & Impostos
+### IPTU & Impostos
 - Situação fiscal do contribuinte
 - Botão que abre **portal SEFIN** no navegador
 - Emitir boleto externo
 
-### 🏥 Saúde +
+### Saúde +
 - Agente de saúde com **ligação real** (toque no telefone)
 - 3 postos de saúde
-- Botão **📍 Ver no Mapa** → abre Google Maps direto no endereço
-- Botão **📞 Ligar** → abre discador nativo
+- Botão ** Ver no Mapa** → abre Google Maps direto no endereço
+- Botão ** Ligar** → abre discador nativo
 
-### 👥 Contatos Públicos
+### Contatos Públicos
 - 12 secretarias e serviços
 - Busca em tempo real por nome ou categoria
 - Botão **Ligar** → abre discador nativo com número
 
 ---
 
-## 📱 Permissões necessárias
+## Permissões necessárias
 
 ```xml
 CALL_PHONE    → ligar para órgãos
@@ -118,7 +118,7 @@ INTERNET      → portal SEFIN, Google Maps
 
 ---
 
-## 🎨 Design
+## Design
 
 - Fonte: **Montserrat** (Google Fonts Downloadable)
 - Cor primária: `#00897B` (Teal)
@@ -128,7 +128,7 @@ INTERNET      → portal SEFIN, Google Maps
 
 ---
 
-## 🗂️ Banco de dados (Room)
+## Banco de dados (Room)
 
 A entidade `Record` persiste localmente:
 
